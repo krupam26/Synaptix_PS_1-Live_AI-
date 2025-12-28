@@ -15,6 +15,10 @@ LiveDoc Sentinel demonstrates how streaming-first data ingestion and agentic rea
 can be combined to build AI assistants that remain accurate, explainable, and trustworthy
 over time.
 
+*#**Key Novelty**
+
+Unlike traditional RAG systems that treat documents as static corpora, LiveDoc Sentinel treats documentation as a continuously evolving data stream. The system combines streaming ingestion, incremental semantic indexing, and agentic reasoning to maintain alignment with real-world knowledge in near real time—without manual reprocessing cycles.
+
 ##**Problem Statement**
 
 Modern AI assistants rely heavily on Retrieval-Augmented Generation (RAG) to answer
@@ -140,12 +144,7 @@ reasoning component to be upgraded without architectural changes when BDH become
 
 ##**Applicability Beyond Developer Tools**
 
-While demonstrated in the Developer Tools domain, the same architecture applies to any
-context where knowledge evolves continuously:
-Financial filings and earnings reports
-Medical literature and clinical guidelines
-Compliance and regulatory monitoring
-The core contribution is not domain-specific, but architectural.
+The architecture generalizes because it operates on change events, not domain-specific semantics.
 
 ##**Conclusion**
 
@@ -153,6 +152,7 @@ LiveDoc Sentinel demonstrates a shift from static AI assistants to adaptive,
 streaming-aware agents.
 By combining Pathway’s real-time data processing with agentic reasoning, the system shows
 how AI can remain trustworthy in environments where knowledge never stands still.
+
 
 
 
