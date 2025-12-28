@@ -15,7 +15,7 @@ LiveDoc Sentinel demonstrates how streaming-first data ingestion and agentic rea
 can be combined to build AI assistants that remain accurate, explainable, and trustworthy
 over time.
 
-*#**Key Novelty**
+##**Key Novelty**
 
 Unlike traditional RAG systems that treat documents as static corpora, LiveDoc Sentinel treats documentation as a continuously evolving data stream. The system combines streaming ingestion, incremental semantic indexing, and agentic reasoning to maintain alignment with real-world knowledge in near real time—without manual reprocessing cycles.
 
@@ -29,18 +29,19 @@ and APIs change continuously. Every update requires expensive re-embedding, re-i
 and redeployment, which means AI systems inevitably operate on stale or outdated
 knowledge.
 For developers, this leads to:
-•	Incorrect answers after recent code changes
-•	Missed breaking changes in evolving APIs
-•	Manual effort to keep AI tools in sync with repositories
-•	Reduced trust in AI assistants for real-time decision-making
+1. Incorrect answers after recent code changes
+2. Missed breaking changes in evolving APIs
+3.	Manual effort to keep AI tools in sync with repositories
+4.	Reduced trust in AI assistants for real-time decision-making
+
 Existing solutions accept this staleness as a trade-off, relying on batch updates and
 human oversight. This limits AI systems to reactive, snapshot-based behavior, rather
 than continuous understanding.
 What is missing is an AI system that can:
-•	Observe knowledge as it evolves
-•	Update its understanding instantly
-•	Reason over changes, not just static content
-•	Act autonomously without manual refresh cycles
+1. Observe knowledge as it evolves
+2. Update its understanding instantly
+3. Reason over changes, not just static content
+4. Act autonomously without manual refresh cycles
 Without live knowledge adaptation, AI assistants cannot function as reliable co-pilots
 in fast-moving, real-world workflows.
 
@@ -152,6 +153,7 @@ LiveDoc Sentinel demonstrates a shift from static AI assistants to adaptive,
 streaming-aware agents.
 By combining Pathway’s real-time data processing with agentic reasoning, the system shows
 how AI can remain trustworthy in environments where knowledge never stands still.
+
 
 
 
