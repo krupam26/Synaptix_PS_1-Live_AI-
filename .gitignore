@@ -1,0 +1,23 @@
+# Python stuff
+__pycache__/
+*.pyc
+venv/
+venv-wsl/
+*.egg-info/
+
+# VS Code
+.vscode/
+
+# Python virtualenv
+*.env
+*.venv
+
+# Bytecode
+*.py[cod]
+*$py.class
+
+# Github stuff
+.DS_Store
+
+# Node stuff
+node_modules/
