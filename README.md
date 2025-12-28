@@ -54,29 +54,7 @@ The agent reasons over the updated knowledge base within seconds
 This enables an AI co-pilot that adapts continuously without manual refresh cycles.
 
 ##**System Architecture**
-
-The system follows a streaming-first architecture:
-1. Live Data Sources
-Developer documentation, issue reports, or other evolving text-based artifacts.
-
-2. Pathway Streaming Engine
-Monitors data sources for changes
-Handles incremental ingestion and transformation
-Ensures low-latency propagation of updates
-
-3. Pathway Vector Store
-Maintains a continuously updated semantic index that reflects the current state of
-documents.
-
-4. Agent Orchestration Layer
-An agent framework (e.g., LangGraph or custom orchestration) that:
-Observes knowledge updates
-Determines relevance to user queries
-Plans reasoning steps
-Uses tools and retrieval selectively
-
-5. Query & Demo Interface
-Allows users to query the system and observe how responses evolve as data changes.
+<img width="749" height="302" alt="image" src="https://github.com/user-attachments/assets/a193267e-f034-4b5b-b822-797cc8fd94b7" />
 
 ##**Demonstrating “Live” Behavior**
 
@@ -145,4 +123,5 @@ LiveDoc Sentinel demonstrates a shift from static AI assistants to adaptive,
 streaming-aware agents.
 By combining Pathway’s real-time data processing with agentic reasoning, the system shows
 how AI can remain trustworthy in environments where knowledge never stands still.
+
 
