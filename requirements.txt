@@ -1,0 +1,7 @@
+pathway[xpack-llm,all]
+langgraph
+langchain-ollama
+langchain-hub
+sentence-transformers
+gitpython
+streamlit  # For optional UI
