@@ -1,23 +1,19 @@
-# Python stuff
+target/
+
 __pycache__/
-*.pyc
-venv/
-venv-wsl/
-*.egg-info/
+.mypy_cache/
+.pytest_cache/
+.coverage_report*/
+.test_*
 
-# VS Code
-.vscode/
+*.lcov
 
-# Python virtualenv
-*.env
-*.venv
-
-# Bytecode
-*.py[cod]
-*$py.class
-
-# Github stuff
-.DS_Store
-
-# Node stuff
-node_modules/
+/docs/**/article.md
+/docs/2.developers/?.API-docs
+/docs/2.developers/?.documentation
+/docs/2.developers/?.templates/_readmes
+/docs/2.developers/?.templates/rag/_readmes
+.yarn
+*.csv
+!output_stream.csv
+.venv
