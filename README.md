@@ -17,17 +17,28 @@ over time.
 
 ##**Problem Statement**
 
-Most AI assistants used in developer workflows rely on static RAG pipelines. These systems
-fail when knowledge changes, because:
-Documentation updates are not reflected immediately
-AI answers silently rely on outdated information
-Re-embedding and re-indexing entire corpora is slow and operationally expensive
-Users cannot tell when or why an answer has changed
-In practice, this leads to loss of trust. Developers stop relying on AI assistants when
-they produce answers that ignore recent changes or fail during critical moments such as
-debugging or API migration.
-The core problem is not retrieval quality alone — it is the inability of AI systems to
-observe, understand, and adapt to change as it happens.
+Modern AI assistants rely heavily on Retrieval-Augmented Generation (RAG) to answer
+questions over documents, codebases, and knowledge bases. However, traditional RAG
+pipelines are fundamentally static.
+In real-world environments—especially in developer workflows—documentation, codebases,
+and APIs change continuously. Every update requires expensive re-embedding, re-indexing,
+and redeployment, which means AI systems inevitably operate on stale or outdated
+knowledge.
+For developers, this leads to:
+•	Incorrect answers after recent code changes
+•	Missed breaking changes in evolving APIs
+•	Manual effort to keep AI tools in sync with repositories
+•	Reduced trust in AI assistants for real-time decision-making
+Existing solutions accept this staleness as a trade-off, relying on batch updates and
+human oversight. This limits AI systems to reactive, snapshot-based behavior, rather
+than continuous understanding.
+What is missing is an AI system that can:
+•	Observe knowledge as it evolves
+•	Update its understanding instantly
+•	Reason over changes, not just static content
+•	Act autonomously without manual refresh cycles
+Without live knowledge adaptation, AI assistants cannot function as reliable co-pilots
+in fast-moving, real-world workflows.
 
 ##**Design Goals**
 
@@ -142,6 +153,7 @@ LiveDoc Sentinel demonstrates a shift from static AI assistants to adaptive,
 streaming-aware agents.
 By combining Pathway’s real-time data processing with agentic reasoning, the system shows
 how AI can remain trustworthy in environments where knowledge never stands still.
+
 
 
 
