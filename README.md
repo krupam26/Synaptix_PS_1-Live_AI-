@@ -54,6 +54,7 @@ The agent reasons over the updated knowledge base within seconds
 This enables an AI co-pilot that adapts continuously without manual refresh cycles.
 
 ##**System Architecture**
+
 <img width="749" height="302" alt="image" src="https://github.com/user-attachments/assets/a193267e-f034-4b5b-b822-797cc8fd94b7" />
 
 ##**Demonstrating “Live” Behavior**
@@ -98,15 +99,33 @@ prioritize correctness over immediacy when required.
 
 ##**Future Scope: Baby Dragon Hatchling (BDH)**
 
-The architecture anticipates integration with Pathway’s Baby Dragon Hatchling (BDH)
-model once available.
-BDH integration would enable:
+LiveDoc Sentinel is designed with a modular reasoning layer that can evolve as more capable
+reasoning models become available. In particular, the system architecture anticipates
+integration with Pathway’s Baby Dragon Hatchling (BDH) model once officially released.
+
+Potential future enhancements include:
+
 1.Long-horizon reasoning over document evolution
-2.Persistent agent memory across sessions
-3.More deterministic planning under continuous updates
-4.Reduced inference cost for always-on agents
-The reasoning layer is intentionally modular to allow seamless replacement when BDH is
-released.
+While the current agent reasons over the latest document state, BDH could enable reasoning
+across historical change sequences, allowing the agent to understand how and why
+knowledge has evolved over time.
+
+2.Persistent and deterministic agent memory
+BDH may allow the agent to maintain structured memory across sessions, reducing reliance on
+ad-hoc context windows while avoiding memory drift and hallucinations.
+
+3.More stable planning under continuous updates
+Streaming data introduces frequent state changes. BDH’s design could support more
+deterministic planning and decision-making in environments where knowledge updates are
+ongoing.
+
+4.Cost-efficient always-on reasoning
+As a lighter-weight reasoning model, BDH could serve as a default reasoning layer for
+continuously running agents, escalating to larger models only when deeper analysis is
+required.
+
+The current system cleanly separates ingestion, indexing, and reasoning, allowing the
+reasoning component to be upgraded without architectural changes when BDH becomes available.
 
 ##**Applicability Beyond Developer Tools**
 
@@ -123,5 +142,6 @@ LiveDoc Sentinel demonstrates a shift from static AI assistants to adaptive,
 streaming-aware agents.
 By combining Pathway’s real-time data processing with agentic reasoning, the system shows
 how AI can remain trustworthy in environments where knowledge never stands still.
+
 
 
